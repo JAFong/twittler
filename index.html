@@ -3,13 +3,17 @@
   <head>
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+    <div class="tweet">
+      
+    </div>
     <script>
 
       $(document).ready(function(){
         var $body = $('body');
-        $body.html('');
+        //$body.html('');
 
         var index = streams.home.length - 1;
         while(index >= 0){
@@ -23,5 +27,6 @@
       });
 
     </script>
+    <script src="myjquery.js"></script>
   </body>
 </html>
