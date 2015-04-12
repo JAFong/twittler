@@ -1,6 +1,14 @@
 $(document).ready(function() {
+	var username = Object.getOwnPropertyNames(streams.users);
+	$('#shawndrost').text('@' + username[0]);
+	$('#sharksforcheap').text('@' + username[1]);
+	$('#mracus').text('@' + username[2]);
+	$('#douglascalhoun').text('@' + username[3]);
 	$('.tweet').on('click', 'div', function() {
 		$(this).text("Jquery Test");
+	});
+	$('#userbutton').on('click', function() {
+		$('.users').find('div').fadeToggle('slow');
 	});
 	$('.refresh').on('click', function() {
 		var $tweets = $('.tweet');

@@ -1,7 +1,13 @@
 html {
 	font-family: futura;
 }
-
+.button {
+	background-color: antiquewhite;
+	border-radius: 25px;
+	padding: 5px 10px;
+	min-width: 70px;
+	text-align: center;
+}
 .tweet {
 	position: relative;
 	margin: 0 auto;
@@ -28,12 +34,27 @@ h1 {
 	position: fixed;
 	right: 5px;
 	top: 5px;
-	background-color: antiquewhite;
 	width: 70px;
-	border-radius: 25px;
-	padding: 5px 10px;
 }
-.refresh:hover {
+.button:hover {
 	color: white;
 	background-color: black;
+}
+.users {
+	position: fixed;
+	top: 35px;
+	left: 5px;
+}
+.users div {
+	background-color: antiquewhite;
+	border-radius: 25px;
+	margin: 5px 0;
+	padding: 10px 5px;
+	display: none;
+}
+#userbutton {
+	display: block;
+	top: 5px;
+	left: 5px;
+	position: fixed;
 }
