@@ -6,9 +6,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div class="tweet">
-      
-    </div>
+    <h1>
+      TWITTLER
+    </h1>
+    <div class="tweet"></div>
+    <div class="refresh">REFRESH</div>
+    <div class="users"></div>
+
     <script>
 
       $(document).ready(function(){
@@ -20,13 +24,15 @@
           var tweet = streams.home[index];
           var $tweet = $('<div></div>');
           $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
+          $tweet.appendTo($('.tweet'));
           index -= 1;
         }
 
       });
 
     </script>
-    <script src="myjquery.js"></script>
   </body>
+  <footer>
+    <script src="myjquery.js"></script>
+  </footer>
 </html>
