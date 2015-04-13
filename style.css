@@ -51,6 +51,7 @@ h1 {
 	margin: 5px 0;
 	padding: 10px 5px;
 	display: none;
+	text-align: left;
 }
 #userbutton {
 	display: block;
